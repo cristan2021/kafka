@@ -1,13 +1,24 @@
-# compile
+### Exemple d'utilisation
+1. **Construire le projet :**
 
-```bash
-mvn clean install compile
-```
+    Pour compiler le projet et récupérer les dépendances, ouvrez un terminal dans le répertoire du projet et exécutez la commande suivante :
 
-# exec
+    ```bash
+    make build
+    ```
 
-```bash
-mvn exec:java -Dexec.mainClass="com.kafka.ProdMain"
-mvn exec:java -Dexec.mainClass="com.kafka.ConsMain"
+2. **Exécuter le producteur :**
 
-```
+    Pour lancer l'application producteur, ouvrez un terminal dans le répertoire du projet et exécutez la commande suivante :
+
+    ```bash
+    make prod
+    ```
+
+3. **Exécuter le consommateur :**
+
+    Pour lancer l'application consommateur, exécutez la commande suivante :
+
+    ```bash
+    make cons
+    ```
